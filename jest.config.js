@@ -3,10 +3,10 @@ module.exports = {
     "^.+\\.[jt]sx?$": "babel-jest",
   },
   transformIgnorePatterns: [
-    "/node_modules/(?!axios)/", // 👈 ¡Muy importante!
+    "/node_modules/(?!axios)/", 
   ],
   moduleNameMapper: {
-    "\\.(css|less|scss)$": "identity-obj-proxy", // Ignorar CSS en los tests
+    "\\.(css|less|scss)$": "identity-obj-proxy", 
   },
   testEnvironment: "jsdom",
 };
